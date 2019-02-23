@@ -1,0 +1,20 @@
+<html>
+<head>
+    <title>Json là gì</title>
+    <meta charset="utf-8"/>
+</head>
+<body>
+<h2>JSON và JavaScript</h2>
+<p id="demo"></p>
+<script>
+    var text = '{"name":"Nguyễn Văn Xuân","street":"123 Lê Lai HCM","phone":"01234567890"}';
+
+    var obj = JSON.parse(text);
+
+    document.getElementById("demo").innerHTML =
+        obj.name + "</br>" +
+        obj.street + "</br>" +
+        obj.phone;
+</script>
+</body>
+</html>

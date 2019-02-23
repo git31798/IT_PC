@@ -1,0 +1,98 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+    <link href="https://netdna.bootstrapcdn.com/bootstrap/3.0.3/css/bootstrap.min.css" rel="stylesheet">
+    <script>
+        $(function () {
+            var nav = $('.nav-container');
+            var content = $('.content-wrap');
+            $(window).scroll(function () {
+                if ($(this).scrollTop() > 83) {
+                    nav.addClass("fixed-nav");
+                    content.addClass("topmargin");
+                } else {
+                    nav.removeClass("fixed-nav");
+                    content.removeClass("topmargin");
+                }
+            });
+        });
+    </script>
+    <style>
+        .fixed-nav{
+            position: fixed;
+            left: 0;
+            top: 0;
+            width: 100%;
+            z-index: 999;
+        }
+        .fixed-nav .navbar-default{
+            background-color: rgba(67, 154, 226, 0.89);
+        }
+        .topmargin{
+            margin-top: 83px;
+        }
+
+        /*Optional styles, Added for demo*/
+
+        .content-wrap{
+            min-height: 1000px; /*Added to get browse scroll- demo*/
+        }
+        .navbar-default{
+            background-color: rgb(67, 154, 226);
+            border-color: rgb(46, 127, 194);
+        }
+        .navbar-default .navbar-nav > li > a,
+        .navbar-default .navbar-brand{
+            color: #fff;
+        }
+    </style>
+</head>
+<body>
+<div class="container">
+    <div class="row">
+        <h2>How to create fixed menu when scroll page</h2>
+        <span>&nbsp;</span>
+    </div>
+
+    <!-- Navigation container -->
+    <div class="nav-container">
+        <nav class="row navbar navbar-default">
+            <div class="container">
+                <div class="container-fluid">
+                    <div class="navbar-header">
+                        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                            <span class="sr-only">Toggle navigation</span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                        </button>
+                        <a class="navbar-brand" href="#">Brand</a>
+                    </div>
+                    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                        <ul class="nav navbar-nav">
+                            <li class="active"><a href="#">Link <span class="sr-only">(current)</span></a></li>
+                            <li><a href="#">Link</a></li>
+                        </ul>
+                        <form class="navbar-form navbar-right" role="search">
+                            <div class="form-group">
+                                <input type="text" class="form-control" placeholder="Search">
+                            </div>
+                            <button type="submit" class="btn btn-default">Submit</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </div>
+    <!-- End Navigation container -->
+
+    <div class="row content-wrap">
+        Lorem ipsum dolor sit amet, justo quis lacinia sed tempus, nulla ac, neque pede, netus vel. Aliquet bibendum integer risus, lacinia vestibulum sed hendrerit. Mi et wisi, ut tincidunt, malesuada ipsum nullam. Leo interdum massa, a diam nulla. Cras consectetuer fusce fusce mi vel, nec et tincidunt id per elit, sit arcu. Quis vestibulum arcu. Cursus purus ut mi ut urna, lobortis dictumst ullamcorper. Lacus blandit quis, quis pellentesque nec ornare tortor. Dis vel cursus metus arcu. Donec at praesent, nisl quam sed ut, dolor sed erat etiam, et turpis cras ante id. Id ante accumsan eros. Imperdiet urna inceptos eros ac, morbi duis interdum, mi at, quisque scelerisque vitae arcu.
+        At varius integer dictum turpis vivamus porta, praesent praesent congue iaculis, ante tristique in lacus quam aenean ac. Sollicitudin penatibus purus faucibus, vestibulum id. Lorem sodales vestibulum vel orci sodales, vestibulum urna tincidunt mi sed nisl sed, venenatis vitae, volutpat imperdiet hendrerit mattis elit habitant. Massa est class. Nec euismod lectus, justo sed vitae, rutrum eu, at molestie rutrum pharetra diam vitae. Auctor bibendum sagittis feugiat amet, nunc quam, nullam ut. Leo lacinia sed felis, eget commodo blandit nullam sit. Donec ut molestie faucibus auctor maecenas ut, in pede venenatis enim id, justo eu mauris et vestibulum sollicitudin scelerisque. Commodo suspendisse purus, vestibulum enim, accumsan odio amet nam, magna sed, dictum amet id.
+        Aenean egestas vivamus nisl nulla luctus, ultrices porta nunc in tortor, nunc duis neque non pellentesque ullamcorper, ornare est quis scelerisque, ultrices urna nec scelerisque posuere mollis adipiscing. Wisi consequat pulvinar, adipiscing ultricies, quam lorem. Felis sit iaculis malesuada, nulla porttitor, interdum ornare quam, sodales quis dictum viverra nulla commodo vivamus. Ante vitae vestibulum wisi eu dictum, platea posuere convallis et, phasellus dui a eget, condimentum nec. Nullam a quis mauris ut at lectus, tellus leo, viverra elementum ante suscipit nec, luctus sit rutrum sed risus morbi nullam, lacinia diam sed elit. Nec tortor aenean auctor, lorem urna ridiculus aenean elit interdum, ac sem porttitor ut, vehicula quis nec cras. Nec luctus, orci pellentesque, et tristique, euismod sit. Imperdiet lectus wisi vel justo sed quam, massa vitae felis nec, orci lectus turpis, ut ac sed. Eleifend arcu, ornare fusce sit orci suspendisse nunc.
+        Vivamus ac nullam vel, maecenas nunc vel tempus mauris, molestie nibh, et risus, egestas quis ut. Varius sed cras in tempor duis. Arcu a id. Non ultrices lacinia in aut, ac amet in, quis diam, vehicula feugiat eros ipsum. Convallis vivamus, nec a dui, eros habitasse. Erat urna maecenas, magna lobortis magna nunc, urna interdum dolor dolor inceptos magna laoreet, fusce quia eget rutrum, pede rutrum a dui purus. Urna venenatis, per porta vitae.
+    </div>
+</div>
+</body>
+</html>

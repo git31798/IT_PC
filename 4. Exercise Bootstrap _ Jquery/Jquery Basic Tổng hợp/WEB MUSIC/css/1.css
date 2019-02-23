@@ -1,0 +1,43 @@
+#video-player{
+    margin:0;
+}
+#audio-control{
+    width:500px;
+    height:50px;
+    border:1px solid black;
+    margin-top:10px;
+}
+#audio-control div{
+    float:left;
+    display:block;
+    height:100%;
+
+}
+#audio-control #playpausebtn{
+    width:50px;
+    height:100%;
+    text-align: center;
+    /*margin-top:6px;*/
+    font-size:2em;
+    color:white;
+    background-color: rgba(0,0,0,.6);
+}
+#audio-control #playpausebtn:hover{
+    color:black;
+    background-color: white;
+
+}
+#audio-control #playpausebtn span{
+    margin-top:7px;
+}
+#audio-control #seekerbar{
+    width:350px;
+    background-color: rgba(15,211,234,.6);
+    padding:12px 10px;
+}
+#audio-control #time{
+    width:98px;
+    background-color: black;
+    color:white;
+    padding:14px 5px
+}

@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="css/bootstrap-3.3.7-dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/2.css">
+    <link rel="stylesheet" href="css/animate.css">
+
+
+</head>
+<body>
+<div id="wrapper">
+
+    <div id="banner">
+
+        <div id="row">
+            <a href="#" class="nav-toggle-btn">
+                <span class="glyphicon glyphicon-menu-hamburger"></span>
+            </a>
+            <div class="col-md-1" id="logo"><a href="#">SiteName</a></div>
+            <div id="search" class="col-md-5">
+                <form>
+                    <button type="submit"><span class="glyphicon glyphicon-search"></span></button>
+                    <input type="text" name="search" placeholder="Search..">
+
+                </form>
+            </div>
+            <div id="login">
+                <ul class="nav navbar-nav navbar-right">
+                    <li><a href="#"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
+                    <li><a href="#"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <nav class="sidebar">
+        <ul>
+            <li><a href="#"><span class="glyphicon glyphicon-home"></span>&nbsp&nbspHome</a></li>
+            <li><a href="#"><span class="glyphicon glyphicon-user"></span>&nbsp&nbspAccount</a></li>
+            <li><a href="#"><span class="glyphicon glyphicon-fire"></span>&nbsp&nbspTrending</a></li>
+            <li><a href="#"><span class="glyphicon glyphicon-book"></span>&nbsp&nbspAlbum</a></li>
+        </ul>
+    </nav>
+
+    <div id="content">
+        <div class="container">
+            <div class="row">
+                    <h1>Featured</h1><br>
+                    <hr>
+            </div>
+            <div class="row">
+                <ul id="trackbox">
+                    <!--<div class="col-md-4 songs">-->
+                        <!--<img class="img-responsive thumbnail" src="images/2/archangel.jpg" height="500" width="500"/>-->
+                        <!--<div class="overlay">-->
+                            <!--<a href="songs/Archangel.mp3"><span class="glyphicon glyphicon-play"></span></a>-->
+                            <!--<div class="song-name">Archangel</div>-->
+                            <!--<div class="author">Two steps from hell</div>-->
+                        <!--</div>-->
+                        <!--<p>Archangel</p>-->
+                    <!--</div>-->
+                    <!--<div class="col-md-4 songs">-->
+                        <!--<img class="img-responsive thumbnail" src="images/2/battlecry.jpg" height="500" width="500"/>-->
+                        <!--<div class="overlay">-->
+                            <!--<a href="songs/Victory.mp3"><span class="glyphicon glyphicon-play"></span></a>-->
+                            <!--<div class="song-name">Victory</div>-->
+                            <!--<div class="author">Two steps from hell</div>-->
+                        <!--</div>-->
+                        <!--<p>Victory</p>-->
+                    <!--</div>-->
+                    <!--<div class="col-md-4 songs">-->
+                        <!--<img class="img-responsive thumbnail" src="images/2/invincible.jpg" height="500" width="500"/>-->
+                        <!--<div class="overlay">-->
+                            <!--<a href="songs/HeartOfCourage.mp3"><span class="glyphicon glyphicon-play"></span></a>-->
+                            <!--<div class="song-name">Heart of Courage</div>-->
+                            <!--<div class="author">Two steps from hell</div>-->
+                        <!--</div>-->
+                        <!--<p>Heart of Courage</p>-->
+                    <!--</div>-->
+                    <!--<div class="col-md-4 songs">-->
+                        <!--<img class="img-responsive thumbnail" src="images/2/dynasty.jpg" height="500" width="500"/>-->
+                        <!--<div class="overlay">-->
+                            <!--<a href="songs/DragonRider.mp3"><span class="glyphicon glyphicon-play"></span></a>-->
+                            <!--<div class="song-name">Dragonrider</div>-->
+                            <!--<div class="author">Two steps from hell</div>-->
+                        <!--</div>-->
+                        <!--<p>Dragon Rider</p>-->
+                    <!--</div>-->
+                    <!--<div class="col-md-4 songs">-->
+                        <!--<img class="img-responsive thumbnail" src="images/2/Skyworld.jpg" height="500" width="500"/>-->
+                        <!--<div class="overlay">-->
+                            <!--<a href="songs/Winterspell.mp3"><span class="glyphicon glyphicon-play"></span></a>-->
+                            <!--<div class="song-name">Winterspell</div>-->
+                            <!--<div class="author">Two steps from hell</div>-->
+                        <!--</div>-->
+                        <!--<p>Winterspell</p>-->
+                    <!--</div>-->
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <div id="now-playing">
+        <a href="#" class="glyphicon glyphicon-chevron-up" id="showHide-nowplaying"></a>
+        <div style="overflow-y: hidden;">
+            <p>Now playing</p>
+            <div id="playing-song"></div>
+        </div>
+    </div>
+    <audio src="" controls  id="audioPlayer"></audio>
+</div>
+<script src="js/jquery-3.2.1.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/Test.js"></script>
+<!--<script src="2.js"></script>-->
+<script>
+    // loads the audio player
+    audioPlayer();
+    toggleNowplaying()
+</script>
+</body>
+</html>

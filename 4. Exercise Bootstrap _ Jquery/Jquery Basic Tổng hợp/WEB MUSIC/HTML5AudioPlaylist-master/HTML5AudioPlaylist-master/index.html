@@ -1,0 +1,38 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>HTML5 Audio Player</title>
+    <style>
+        #playlist{
+            list-style: none;
+        }
+        #playlist li a{
+            color:black;
+            text-decoration: none;
+        }
+        #playlist .current-song a{
+            color:blue;
+        }
+    </style>
+    <!-- Source Code From YouTube.com/MicroTechTutorials  you may remove this message on your webpage but please do not redistribtue -->
+</head>
+<body>
+
+    <video src="" controls id="audioPlayer">
+        Sorry, your browser doesn't support html5!
+    </video>
+    <ul id="playlist">
+        <li class="current-song"><a href="../../Army%20Of%20Angels%201%20by%20Johannes%20Bornlöf%20-%20%5BAction%20Music%5D.mp4">Army of angels</a></li>
+        <li><a href="../../Two%20Steps%20From%20Hell%20-%20Victory.mp4">Victory - 2sfh</a></li>
+        <li><a href="../../Two%20Steps%20From%20Hell%20-%20Winterspell%20(SkyWorld).mp4">Winterspell - 2sfh</a></li>
+    </ul>
+    <script src="https://code.jquery.com/jquery-2.2.0.js"></script>
+    <script src="audioPlayer.js"></script>
+    <script>
+        // loads the audio player
+        audioPlayer();
+    </script>
+</body>
+</html>

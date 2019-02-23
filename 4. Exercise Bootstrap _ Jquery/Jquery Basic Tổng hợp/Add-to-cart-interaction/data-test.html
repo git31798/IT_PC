@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <style>
+        .test{display: inline-block}
+        .test:after{content: attr(data-content)}
+    </style>
+    <script>
+        function showDetails(animal) {
+            var animalType = animal.getAttribute("data-animal-type");
+            alert(animal.innerHTML + " là một loại " + animalType + ".");
+        }
+    </script>
+</head>
+<body>
+<h1>Loài vật</h1>
+<p>Nhấn vào tên dưới đây để biết là loài vật gì:</p>
+
+<ul>
+    <li onclick="showDetails(this)" id="owl" data-animal-type="chim">Owl</li>
+    <li onclick="showDetails(this)" id="salmon" data-animal-type="cá">Salmon</li>
+    <li onclick="showDetails(this)" id="tarantula" data-animal-type="nhện">Tarantula</li>
+</ul>
+<hr>
+<a href="#" id="link1" data-price="400000" data-saleoff="0.4" data-product-id="4" >Mua hàng</a>
+
+<script>
+    $(document).ready(function () {
+        $(document).ready( function(){
+            $(window).contextmenu( function( e ){
+                //code ở đây
+                e.preventDefault();//Không click chuột phải được để reload
+            });
+        });
+    })
+</script>
+
+<div id="first"><p>đoạn đầu</p>
+    <div id="second"><p>đoạn 2</p>
+        <p id="third">đoạn 3</p>
+    </div>
+</div>
+<script>
+    $(document).ready( function ( e ){
+        $("#first").click(function(e) {
+            alert("first");
+        });
+        $("#second").click(function(e) {
+            alert("second");
+        });
+        $("#third").click(function(e) {
+            alert("third");
+            e.stopPropagation();//không bị ảnh hưởng bởi sự kiện của phần tử cha, ông của nó.
+        });
+    });
+</script>
+</body>
+</html>

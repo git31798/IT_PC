@@ -1,0 +1,45 @@
+body {
+	background-color: #245269;
+}
+h1
+{
+	color: red;
+}
+
+.navbar {
+	border-radius: 0;
+}
+
+.navbar-default {
+	
+}
+
+#myheader {
+	background-image: url("../images/banner-bg.jpg");
+	height: 100px;
+	color: #ffffff;
+	font-size: 20pt;
+	font-weight: bold;
+	padding-left: 8px;
+	padding-top: 4px;
+}
+#mynavigationbar {
+	height: 50px;
+}
+#mycontent { 	
+ 	min-height: 400px;
+	background-color: yellow;
+}
+
+#mymenu {
+	background-color: red;
+	margin-top: 0;
+	min-height: 400px;
+}
+
+#myfooter {
+	background-color: blue;
+	height: 50px;	
+	color: #ffffff;
+	padding-left: 6px;
+}

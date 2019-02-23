@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script>
+        $("#checkAll").change(function () {
+            $("input:checkbox").prop('checked', $(this).prop("checked"));
+        });
+    </script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+</head>
+<body>
+<form action="#">
+    <p><label><input type="checkbox" id="checkAll"/> Check all</label></p>
+
+    <fieldset>
+        <legend>Loads of checkboxes</legend>
+        <p><label><input type="checkbox" /> Option 1</label></p>
+        <p><label><input type="checkbox" /> Option 2</label></p>
+        <p><label><input type="checkbox" /> Option 3</label></p>
+        <p><label><input type="checkbox" /> Option 4</label></p>
+    </fieldset>
+</form>
+</body>
+</html>

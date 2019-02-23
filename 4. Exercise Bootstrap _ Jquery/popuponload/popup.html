@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<head>
+		<meta charset="utf-8" />
+		<title>TienTTT Demo Popup</title>
+	  	<link rel="stylesheet" href="popupT.css">
+		<script type="text/javascript" src="http://code.jquery.com/jquery-1.9.1.js"></script>
+		<script type="text/javascript" src="jquery.popup.js"></script>
+		<script>
+			$(window).load(function() {
+                openFancybox();
+			});
+            function openFancybox() {
+                setTimeout( function() {$('#myModal').popupT($('#myModal').data()); },3000);
+            }
+		</script>
+
+	</head>
+	<body>
+		<div id="myModal" class="popupT-modal">
+			<input type="email" placeholder="Email Address">
+			<input type="submit" value="SIGN UP">
+			<a class="close-popupT-modal">x</a>
+		</div>
+	</body>
+</html>

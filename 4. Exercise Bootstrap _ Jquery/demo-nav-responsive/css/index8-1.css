@@ -1,0 +1,77 @@
+body{
+	margin: auto;	width: 100%;
+/*	font-family: Lucida Sans, Arial, Helvetica, sans-serif;
+*/}
+nav{
+	width: 90%;	margin: auto;/*	height: 50px; */}
+a{	text-decoration: none;	color: black;}
+nav .logo{	width: 25%; float: left;}
+nav .logo img{	width: 100%;}
+nav .icon-menu{display: none; float: right; width: 20px; height: 20px;}
+nav .menu{	width: 75%; float: left; margin-top: 50px;}
+nav .menu ul li{ list-style-type: none;	margin-right: 1px;	float: left; border-right: 1px solid gray;	font-size: 15px;}
+nav .menu ul li a{	text-decoration: none;	padding: 5px; color: gray; font-weight: bold;}
+nav .menu ul li a:hover{ /*hiệu ứng đổi màu khi chọn vào một vùng bất kỳ*/
+	background: greenyellow;	color: green;
+}
+nav .menu ul li a:focus{ 	/*click chọn vào vùng nào thì đổi màu cố định vùng đó*/
+	background: greenyellow; color: green;}
+section{	width: 90%;	margin: auto;}
+section ul{	list-style-type: square;}
+#content1{	float: left; width: 32%;}
+#content2{	float: left; width: 32%; margin-left: 2%;}
+#content3{	float: right; width: 32%;}
+.txt1{	background: greenyellow; border: 1px solid greenyellow;	border-radius: 10px; height: 30px;}
+.list-menu ul{margin-bottom: 45px;}
+.list-menu ul li{
+	list-style-type: none;
+	background: greenyellow;
+	margin-bottom: 10px;
+	border-radius: 5px;
+	padding: 5px;
+	font-weight: bold;
+}
+footer{	width: 90%;	margin: auto;}
+footer #img-footer{width: 25%; 	/*height: 120px; */	float: left;}
+footer #img-footer a img{width: 100%;}
+footer #sec1{width: 35%; float: left; padding-top: 25px;}
+footer #sec2{width: 35%; float: right; padding-top: 25px; text-align: right;}
+
+@media only screen and (max-width: 1096px){
+	nav .logo{	width: 20%;	}
+	nav .menu{	width: 80%;	margin-top: 30px;}
+	nav .menu ul li{font-size: 11px;}
+	.txt1 p{ font-size:  11px;}
+	#content1 {  font-size: 11px; }
+	#content2{ font-size: 11px; }
+	#content3{ font-size: 11px; }
+	footer {font-size: 12px; }
+	
+}
+/*Reponsive cho thiết bị tablet*/
+@media only screen and (max-width: 850px) and (min-width: 700px){
+	nav .logo{	width: 20%;	}
+	nav .menu{	width: 80%;	margin-top: 30px;}
+	nav .menu ul li{font-size: 10px;}
+	.txt1 p{ font-size: 10px;}
+	#content1 { font-size: 10px; }
+	#content2{ font-size: 10px; }
+	#content3{ font-size: 10px; }
+	footer {font-size: 11px; }
+	
+}
+@media only screen and (max-width: 738px){
+	nav .logo{	width: 20%;	}
+	nav .menu{	width: 80%;	margin-top: 30px;}
+	nav .menu ul li{font-size: 9.5px;}
+	.txt1 p{ font-size:  9.5px;}
+	#content1 {  font-size: 9.5px; }
+	#content2{ font-size: 9.5px; }
+	#content3{ font-size: 9.5px; }
+	footer {font-size: 10px; }
+}
+@media only screen and (max-width: 480px){
+	nav .icon-menu{visibility: visible;}
+	nav .menu{visibility: hidden;}
+}
+
